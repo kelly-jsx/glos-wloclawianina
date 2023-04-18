@@ -2,7 +2,7 @@ import { CarouselItem } from './CarouselItem'
 
 export const Carousel = (articles) => {
   return (
-    <div className="mt-3 w-full h-28 carousel">
+    <div className="w-full mt-3 h-28 carousel">
       <CarouselItem
         title="test1"
         imgUrl="https://source.unsplash.com/random/900×700/?fruit"
@@ -13,12 +13,12 @@ export const Carousel = (articles) => {
           src="https://source.unsplash.com/random/900×700/?fruit"
           className="w-full"
         />
-        <div className="flex absolute right-5 left-5 top-1/2 justify-between h-full transform -translate-y-1/2">
+        <div className="absolute flex justify-between h-full transform -translate-y-1/2 right-5 left-5 top-1/2">
           <a href="#slide1" className="self-center btn btn-circle">
             ❮
           </a>
 
-          <p className="self-end shadow">Article title</p>
+          <p className="self-end shadow">Article title2</p>
 
           <a href="#slide3" className="self-center btn btn-circle">
             ❯
@@ -30,7 +30,7 @@ export const Carousel = (articles) => {
           src="https://source.unsplash.com/random/900×700/?fruit"
           className="w-full"
         />
-        <div className="flex absolute right-5 left-5 top-1/2 justify-between h-full transform -translate-y-1/2">
+        <div className="absolute flex justify-between h-full transform -translate-y-1/2 right-5 left-5 top-1/2">
           <a href="#slide2" className="self-center btn btn-circle">
             ❮
           </a>
@@ -47,7 +47,7 @@ export const Carousel = (articles) => {
           src="https://source.unsplash.com/random/900×700/?fruit"
           className="w-full"
         />
-        <div className="flex absolute right-5 left-5 top-1/2 justify-between h-full transform -translate-y-1/2">
+        <div className="absolute flex justify-between h-full transform -translate-y-1/2 right-5 left-5 top-1/2">
           <a href="#slide3" className="self-center btn btn-circle">
             ❮
           </a>
