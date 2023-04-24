@@ -1,52 +1,52 @@
-import Link from "next/link";
-import { ImSearch } from "react-icons/im";
-import { FaRandom } from "react-icons/fa";
+import Link from 'next/link'
+import { ImSearch } from 'react-icons/im'
+import { FaRandom } from 'react-icons/fa'
 
 export const Header = () => {
   const navOptions = [
     {
-      name: "O Portalu",
-      link: "/",
+      name: 'O Portalu',
+      link: '/',
     },
     {
-      name: "Teksty",
-      link: "/posty",
+      name: 'Teksty',
+      link: '/posty',
       categories: [
         {
-          name: "Historia",
-          link: "/historia",
+          name: 'Historia',
+          link: '/historia',
         },
         {
-          name: "Przyroda",
-          link: "/przyroda",
+          name: 'Przyroda',
+          link: '/przyroda',
         },
         {
-          name: "Turystyka",
-          link: "/turystyka",
+          name: 'Turystyka',
+          link: '/turystyka',
         },
         {
-          name: "Kultura i sport",
-          link: "/kulturasport",
+          name: 'Kultura i sport',
+          link: '/kulturasport',
         },
         {
-          name: "Sprawy lokalne",
-          link: "/sprawy-lokalne",
+          name: 'Sprawy lokalne',
+          link: '/sprawy-lokalne',
         },
       ],
     },
     {
-      name: "Galeria",
-      link: "/galeria",
+      name: 'Galeria',
+      link: '/galeria',
     },
     {
-      name: "Quizy",
-      link: "/about",
+      name: 'Quizy',
+      link: '/about',
     },
     {
-      name: "Kontakt",
-      link: "/about",
+      name: 'Kontakt',
+      link: '/about',
     },
-  ];
+  ]
 
   return (
     <div className="navbar bg-base-300">
@@ -55,7 +55,7 @@ export const Header = () => {
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="w-5 h-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -70,7 +70,7 @@ export const Header = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-200 rounded-box w-52"
+            className="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-200 rounded-box w-52"
           >
             {navOptions.map((navOption) => {
               return navOption.categories ? (
@@ -100,19 +100,19 @@ export const Header = () => {
               ) : (
                 <li key={navOption.name}>
                   <Link href={navOption.link}>
-                    <span className="text-base-600 font-bold">
+                    <span className="font-bold text-base-600">
                       {navOption.name}
                     </span>
                   </Link>
                 </li>
-              );
+              )
             })}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Głos Włocławianina</a>
+        <a className="text-xl normal-case btn btn-ghost">Głos Włocławianina</a>
       </div>
-      <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="hidden navbar-end lg:flex">
+        <ul className="px-1 menu menu-horizontal">
           {navOptions.map((navOption) => {
             return navOption.categories ? (
               <li tabIndex={0}>
@@ -144,7 +144,7 @@ export const Header = () => {
                   <span>{navOption.name}</span>
                 </Link>
               </li>
-            );
+            )
           })}
           <button className="btn btn-square btn-ghost">
             <FaRandom className="w-5 h-5" />
@@ -163,5 +163,5 @@ export const Header = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}

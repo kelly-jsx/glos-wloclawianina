@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { MainArticle } from "./MainArticle";
 import { Carousel } from "./Carousel/Carousel";
 
