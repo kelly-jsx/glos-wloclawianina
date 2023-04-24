@@ -1,52 +1,52 @@
-import Link from 'next/link'
-import { ImSearch } from 'react-icons/im'
-import { FaRandom } from 'react-icons/fa'
+import Link from "next/link";
+import { ImSearch } from "react-icons/im";
+import { FaRandom } from "react-icons/fa";
 
 export const Header = () => {
   const navOptions = [
     {
-      name: 'O Portalu',
-      link: '/',
+      name: "O Portalu",
+      link: "/",
     },
     {
-      name: 'Teksty',
-      link: '/posty',
+      name: "Teksty",
+      link: "/posty",
       categories: [
         {
-          name: 'Historia',
-          link: '/historia',
+          name: "Historia",
+          link: "/historia",
         },
         {
-          name: 'Przyroda',
-          link: '/przyroda',
+          name: "Przyroda",
+          link: "/przyroda",
         },
         {
-          name: 'Turystyka',
-          link: '/turystyka',
+          name: "Turystyka",
+          link: "/turystyka",
         },
         {
-          name: 'Kultura i sport',
-          link: '/kulturasport',
+          name: "Kultura i sport",
+          link: "/kulturasport",
         },
         {
-          name: 'Sprawy lokalne',
-          link: '/sprawy-lokalne',
+          name: "Sprawy lokalne",
+          link: "/sprawy-lokalne",
         },
       ],
     },
     {
-      name: 'Galeria',
-      link: '/galeria',
+      name: "Galeria",
+      link: "/galeria",
     },
     {
-      name: 'Quizy',
-      link: '/about',
+      name: "Quizy",
+      link: "/about",
     },
     {
-      name: 'Kontakt',
-      link: '/about',
+      name: "Kontakt",
+      link: "/about",
     },
-  ]
+  ];
 
   return (
     <div className="navbar bg-base-300">
@@ -105,7 +105,7 @@ export const Header = () => {
                     </span>
                   </Link>
                 </li>
-              )
+              );
             })}
           </ul>
         </div>
@@ -144,7 +144,7 @@ export const Header = () => {
                   <span>{navOption.name}</span>
                 </Link>
               </li>
-            )
+            );
           })}
           <button className="btn btn-square btn-ghost">
             <FaRandom className="w-5 h-5" />
@@ -163,5 +163,5 @@ export const Header = () => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};

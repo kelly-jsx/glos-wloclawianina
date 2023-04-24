@@ -1,11 +1,11 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-import { Articles } from '@/components/Articles/Articles'
+import { Articles } from "@/components/Articles/Articles";
 
 export default function Home() {
   return (
     <main className="">
       <Articles />
     </main>
-  )
+  );
 }

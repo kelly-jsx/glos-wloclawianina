@@ -23,7 +23,7 @@ export const CarouselItem = ({ title, imgUrl, slideId }: Props) => {
   return (
     <div id={`slide${slideId}`} className="relative w-full carousel-item">
       <img src={imgUrl} className="w-full" />
-      <div className="flex absolute right-5 left-5 top-1/2 justify-between h-full transform -translate-y-1/2">
+      <div className="absolute flex justify-between h-full transform -translate-y-1/2 right-5 left-5 top-1/2">
         <a
           href={`#slide${previousSlide}`}
           className="self-center btn btn-circle"
@@ -31,7 +31,7 @@ export const CarouselItem = ({ title, imgUrl, slideId }: Props) => {
           ❮
         </a>
 
-        <p className="self-end shadow">{title}</p>
+        <p className="self-end shadow text-fuchsia-600">{title}</p>
 
         <a href={`#slide${nextSlide}`} className="self-center btn btn-circle">
           ❯
@@ -40,3 +40,21 @@ export const CarouselItem = ({ title, imgUrl, slideId }: Props) => {
     </div>
   )
 }
+
+//   <div id="slide2" className="relative w-full carousel-item">
+//     <img
+//       src="https://source.unsplash.com/random/900×700/?fruit"
+//       className="w-full"
+//     />
+//     <div className="absolute flex justify-between h-full transform -translate-y-1/2 right-5 left-5 top-1/2">
+//       <a href="#slide1" className="self-center btn btn-circle">
+//         ❮
+//       </a>
+
+//       <p className="self-end shadow">Article title2</p>
+
+//       <a href="#slide3" className="self-center btn btn-circle">
+//         ❯
+//       </a>
+//     </div>
+//   </div>

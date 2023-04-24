@@ -13,5 +13,5 @@ export const MainArticle = () => {
       <p className="font-bold text-lg">Kino we Włocławku – krótka historia</p>
       <p>4 marca 2023</p>
     </div>
-  )
-}
+  );
+};
