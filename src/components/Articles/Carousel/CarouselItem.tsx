@@ -40,21 +40,3 @@ export const CarouselItem = ({ title, imgUrl, slideId }: Props) => {
     </div>
   )
 }
-
-//   <div id="slide2" className="relative w-full carousel-item">
-//     <img
-//       src="https://source.unsplash.com/random/900×700/?fruit"
-//       className="w-full"
-//     />
-//     <div className="absolute flex justify-between h-full transform -translate-y-1/2 right-5 left-5 top-1/2">
-//       <a href="#slide1" className="self-center btn btn-circle">
-//         ❮
-//       </a>
-
-//       <p className="self-end shadow">Article title2</p>
-
-//       <a href="#slide3" className="self-center btn btn-circle">
-//         ❯
-//       </a>
-//     </div>
-//   </div>
