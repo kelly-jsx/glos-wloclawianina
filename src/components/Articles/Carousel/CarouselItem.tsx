@@ -26,14 +26,17 @@ export const CarouselItem = ({ title, imgUrl, slideId }: Props) => {
       <div className="absolute flex justify-between h-full transform -translate-y-1/2 right-5 left-5 top-1/2">
         <a
           href={`#slide${previousSlide}`}
-          className="self-center btn btn-circle"
+          className="self-center opacity-50 btn btn-circle"
         >
           ❮
         </a>
         <div className="self-end p-2 px-4 mb-1 text-center rounded-md bg-base-100/40 w-fit">
           {title}
         </div>
-        <a href={`#slide${nextSlide}`} className="self-center btn btn-circle">
+        <a
+          href={`#slide${nextSlide}`}
+          className="self-center opacity-50 btn btn-circle"
+        >
           ❯
         </a>
       </div>
