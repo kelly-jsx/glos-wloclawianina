@@ -70,7 +70,7 @@ export const Header = () => {
           </label>
           <ul
             tabIndex={0}
-            className="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-200 rounded-box w-52"
+            className="p-2 mt-3 w-52 shadow menu menu-compact dropdown-content bg-base-200 rounded-box"
           >
             {navOptions.map((navOption) => {
               return navOption.categories ? (
@@ -111,7 +111,7 @@ export const Header = () => {
         </div>
         <a className="text-xl normal-case btn btn-ghost">Głos Włocławianina</a>
       </div>
-      <div className="hidden navbar-end lg:flex">
+      <div className="hidden navbar-center xl:navbar-end lg:flex">
         <ul className="px-1 menu menu-horizontal">
           {navOptions.map((navOption) => {
             return navOption.categories ? (

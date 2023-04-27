@@ -12,8 +12,8 @@ interface Props {
 
 export const Carousel = ({ articles }: Props) => {
   return (
-    // <div className="w-full h-28 carousel bg-gradient-to-t from-base-300/30 to-blue-500/0">
-    <div className="w-full h-28 carousel">
+    // <div className="w-full h-28 bg-gradient-to-t carousel from-base-300/30 to-blue-500/0">
+    <div className="w-full h-28 carousel lg:hidden">
       <>
         {articles.map((article, index) => (
           <CarouselItem
