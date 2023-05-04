@@ -10,12 +10,17 @@ const funfact =
 export default function Home() {
   return (
     <main>
-      <Articles />
+      <div className="lg:hidden">
+        <Articles />
+      </div>
       <div className="container flex flex-col p-3 mx-auto lg:flex-row-reverse lg:gap-24">
         <div>
           <Funfact funfact={funfact} />
         </div>
         <div>
+          <div className="hidden lg:block">
+            <Articles />
+          </div>
           <StartpageArticles title="historia" />
           <StartpageArticles title="historia" />
           <StartpageArticles title="historia" />

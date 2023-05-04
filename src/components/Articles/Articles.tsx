@@ -1,5 +1,6 @@
 import { MainArticle } from './MainArticle'
 import { Carousel } from './Carousel/Carousel'
+import { BottomArticles } from './BottomArticles'
 
 export const Articles = () => {
   const articles = [
@@ -36,10 +37,30 @@ export const Articles = () => {
   ]
 
   return (
-    <div className="flex flex-col w-screen gap-3 pb-4 bg-base-200">
-      <MainArticle />
-      <Carousel articles={articles} />
-      <button className="mx-auto btn btn-primary">Zobacz więcej tekstów</button>
-    </div>
+    <>
+      <div className="flex flex-col gap-3 pb-4 w-screen bg-base-200 lg:hidden">
+        <MainArticle />
+        <Carousel articles={articles} />
+        <button className="mx-auto btn btn-primary">
+          Zobacz więcej tekstów
+        </button>
+      </div>
+      <div className="hidden w-full lg:block">
+        <div className="flex gap-2">
+          <MainArticle />
+          {/* test1 */}
+          <div className="flex flex-col">
+            <BottomArticles />
+            <BottomArticles />
+            <BottomArticles />
+          </div>
+        </div>
+        <div className="flex gap-2">
+          <BottomArticles />
+          <BottomArticles />
+          <BottomArticles />
+        </div>
+      </div>
+    </>
   )
 }
