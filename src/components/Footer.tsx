@@ -2,7 +2,7 @@ import { FaFacebookSquare } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
 
 export const Footer = () => (
-  <footer className="p-10 footer bg-neutral text-neutral-content">
+  <footer className="p-10 footer bg-neutral text-neutral-content lg:justify-around">
     <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
