@@ -9,11 +9,18 @@ const funfact =
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <Articles />
-      <div className="container p-3">
-        <Funfact funfact={funfact} />
-        <StartpageArticles title="historia" />
+      <div className="container flex flex-col p-3 mx-auto lg:flex-row-reverse lg:gap-24">
+        <div>
+          <Funfact funfact={funfact} />
+        </div>
+        <div>
+          <StartpageArticles title="historia" />
+          <StartpageArticles title="historia" />
+          <StartpageArticles title="historia" />
+          <StartpageArticles title="historia" />
+        </div>
       </div>
     </main>
   )
